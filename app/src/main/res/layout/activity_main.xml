@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:text="@string/signIn"
         app:layout_constraintTop_toBottomOf="@+id/passwordET"
-        app:layout_constraintEnd_toEndOf="@+id/passwordET"/>
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
