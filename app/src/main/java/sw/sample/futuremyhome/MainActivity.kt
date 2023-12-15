@@ -2,6 +2,7 @@ package sw.sample.futuremyhome
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.inputmethod.InputMethodManager
 import androidx.core.view.isVisible
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.auth
@@ -34,6 +35,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupsignUpButton() {
         binding.signUpButton.setOnClickListener {
+            hideKeyBoard()
             val email = binding.emailET.text.toString()
             val password = binding.passwordET.text.toString()
             if (email.isEmpty() || password.isEmpty()){Snackbar.make(binding.root, "입력해주세요.", Snackbar.LENGTH_SHORT).show()
@@ -53,6 +55,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupSignInOutButton() {
         binding.signInOutButton.setOnClickListener {
+            hideKeyBoard()
             val email = binding.emailET.text.toString()
             val password = binding.passwordET.text.toString()
             if(Firebase.auth.currentUser == null){
@@ -64,6 +67,7 @@ class MainActivity : AppCompatActivity() {
                     .addOnCompleteListener { task ->
                         if(task.isSuccessful){
                             //로그인 성공
+                            Snackbar.make(binding.root, "로그인 성공", Snackbar.LENGTH_SHORT).show()
                             initViewToSignIn()
                         } else{
                             Snackbar.make(binding.root, "로그인 실패", Snackbar.LENGTH_SHORT).show()
@@ -96,6 +100,9 @@ class MainActivity : AppCompatActivity() {
         binding.signUpButton.isEnabled = true
     }//private fun initViewToSignOut()
 
-
+    private fun hideKeyBoard(){
+        val hideKB = this.getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+        hideKB.hideSoftInputFromWindow(this.currentFocus?.windowToken, 0)
+    }
 
 }
