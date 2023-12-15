@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "88699794246",
+    "project_id": "futuremyhome-6bd05",
+    "storage_bucket": "futuremyhome-6bd05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88699794246:android:4f9630cf7acf9f11532b47",
+        "android_client_info": {
+          "package_name": "sw.sample.futuremyhome"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCS3d0K98Crj2EknWCPlra4nCuwaMgFM1Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
