@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
 
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="sw.sample.futuremyhome.HomeFragment"
+        tools:layout="@layout/fragment_home"
+        android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/authFrgment"
+        android:name="sw.sample.futuremyhome.AuthFrgment"
+        tools:layout="@layout/frgment_auth"
+        android:label="AuthFrgment" >
+        <action
+            android:id="@+id/action_authFrgment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>
