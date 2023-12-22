@@ -14,9 +14,5 @@
         android:id="@+id/authFrgment"
         android:name="sw.sample.futuremyhome.AuthFrgment"
         tools:layout="@layout/frgment_auth"
-        android:label="AuthFrgment" >
-        <action
-            android:id="@+id/action_authFrgment_to_homeFragment"
-            app:destination="@id/homeFragment" />
-    </fragment>
+        android:label="AuthFrgment" />
 </navigation>

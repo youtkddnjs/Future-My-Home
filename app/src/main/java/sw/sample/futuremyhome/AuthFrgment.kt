@@ -82,8 +82,8 @@ class AuthFrgment: Fragment(R.layout.frgment_auth){
         binding.signInOutButton.text= getString(R.string.signOut)
         binding.signUpButton.isEnabled = false
 
-        val action = AuthFrgmentDirections.actionAuthFrgmentToHomeFragment()
-        findNavController().navigate(action)
+//        val action = AuthFrgmentDirections.actionAuthFrgmentToHomeFragment()
+//        findNavController().navigate(action)
 
     }//private fun initViewToSignIn()
 
