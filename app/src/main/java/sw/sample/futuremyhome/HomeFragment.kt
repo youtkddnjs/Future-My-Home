@@ -16,7 +16,7 @@ class HomeFragment: Fragment(R.layout.fragment_home) {
         val db = Firebase.firestore
         db.collection("articles").document("ftYOeW9WUVtw9iad6U9q").get()
             .addOnSuccessListener { result ->
-//                val map = result.data
+//                val map = result.data 이렇게도 가능
                 val article = result.toObject<ArticleModel>()
                 Log.i("article", "article : $article")
             }
