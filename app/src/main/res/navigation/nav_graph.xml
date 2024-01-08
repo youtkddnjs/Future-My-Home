@@ -7,12 +7,23 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="sw.sample.futuremyhome.HomeFragment"
+        android:name="sw.sample.futuremyhome.ui.home.HomeFragment"
         tools:layout="@layout/fragment_home"
-        android:label="HomeFragment" />
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_writeArticleFragment"
+            app:destination="@id/writeArticleFragment" />
+    </fragment>
     <fragment
         android:id="@+id/authFrgment"
         android:name="sw.sample.futuremyhome.AuthFrgment"
         tools:layout="@layout/frgment_auth"
         android:label="AuthFrgment" />
+    <fragment
+        android:id="@+id/writeArticleFragment"
+        android:name="sw.sample.futuremyhome.ui.article.WriteArticleFragment"
+        android:label="WriteArticleFragment"
+        tools:layout="@layout/fragment_write"/>
+
+
 </navigation>
