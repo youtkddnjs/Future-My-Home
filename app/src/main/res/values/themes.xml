@@ -3,7 +3,9 @@
     <style name="Base.Theme.FutureMyHome" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimary">#000000</item>
+        <item name="colorOnPrimary">#ffffff</item>
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 
     <style name="Theme.FutureMyHome" parent="Base.Theme.FutureMyHome" >
