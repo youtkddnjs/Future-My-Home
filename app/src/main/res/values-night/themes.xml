@@ -4,6 +4,7 @@
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
         <item name="colorPrimary">#ffffff</item>
+        <item name="colorPrimaryVariant">#ffffff</item>
         <item name="colorOnPrimary">#000000</item>
         <item name="android:windowLightStatusBar">false</item>
     </style>
