@@ -23,7 +23,14 @@
         android:id="@+id/writeArticleFragment"
         android:name="sw.sample.futuremyhome.ui.article.WriteArticleFragment"
         android:label="WriteArticleFragment"
-        tools:layout="@layout/fragment_write"/>
+        tools:layout="@layout/fragment_write">
+        <action
+            android:id="@+id/action_writeArticleFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_back"
+            app:destination="@id/homeFragment" />
+    </fragment>
 
 
 </navigation>
